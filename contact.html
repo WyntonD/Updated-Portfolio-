@@ -4,8 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Portfolio</title>
+ 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 </head>
 
@@ -34,21 +37,29 @@
 
   <div id="main-container" class="container">
     <section class="main-section">
-      <h1>Contact:</h1>
       <br>
-      <h2>Email:</h2> <br/>
-      <h3> wyntonmdavis@gmail.com</h3>
-      <h2>Phone number: </h2> <br/>
-      <h3>(919)-699-6444</h3>
+      <div class ="row" id="contacts">
+        <div class ="col-md-6">
+            <h2>Email:</h2> <br/>
+            <h3 id="info">wyntonmdavis@gmail.com</h3>
+        </div>
+        <div class= "col-md-6">
+            <h2>Phone number: </h2> <br/>
+             <h3 id="info">(919)-699-6444</h3>  
+        </div>
+      </div>
+      <br/>
     </section>
     <div class ="links">
         <div class="row">
           <div class ="col-md-6">
+            <h2>Connect with me on LinkedIn</h2>
               <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
               <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="wynton-davis-a63119187"><a class="LI-simple-link" href='https://www.linkedin.com/in/wynton-davis-a63119187?trk=profile-badge'>Wynton Davis</a></div>
           </div>
           <div class ="col-md-6">
             <!-- Place this tag where you want the button to render. -->
+            <h2>Follow my GitHub</h2>
               <a class="github-button" href="https://github.com/WyntonD" data-size="large" aria-label="Follow @WyntonD on GitHub">Follow @WyntonD</a>
           </div>
         </div>

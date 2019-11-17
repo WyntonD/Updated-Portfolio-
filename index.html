@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <title>Portfolio | Wynton Davis</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 
 <body>
-
     <header id="masthead">
         <div class="container">
             <nav>
@@ -35,18 +34,125 @@
     </header>
 
     <div id="main-container" class="container">
-        <section class="main-section">
-            <h1>Wynton Davis</h1>
+            <div class="lines">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+            </div>
+                  
 
-            <p>I'm Wynton Davis from Durham, North Carolina ready to connect and grow as a new full stack web developer!
+        <section class="main-section">
+
+            <p>I'm Wynton Davis from Durham, North Carolina ready to connect and grow as a new full stack web developer!</p>
+            <br/>
+            <p id="bio">I attended Xavier University of Lousisiana and graduated with a B.S. major in Biology and minor in Chemistry. I was originally geared towards medical school to ultimately become a doctor. However during my time at school, I found myself continually curious as to how we succesfully allow for people to access the internet on a daily basis. I frequently used applications such google and specialtly phone apps to look up and clarify scientific terms for my classes. It made me feel that many of us take advantage of the power of technology we hold at our finger tips daily. My growing curioisty of this modern technilogical functionality lead me to enroll into UNCC's coding bootcamp to immerse myself in this world and I couldn't have made a better decision.
+                Coding is a mercurial and powerful tool for one to logically solve problems. This is compounded by the experience of collaborating with other people to merge and mold ideas into fruition. My end goal is to create an app that can be utilized internationally by people within the health care system with intentions of optimizing overall health care services and transportation for patients. 
+
+
+
+            </p>
 
         </section>
 
         <br>
         <section id="resume">
-            <a href="https://docs.google.com/document/d/1Mz7cXAml12y-X64-svAQPJWSQg2TtgxpWUb2-OtyWR8/edit?usp=sharing">Wynton's Resume</a>
+            <a href="https://docs.google.com/document/d/1Mz7cXAml12y-X64-svAQPJWSQg2TtgxpWUb2-OtyWR8/edit?usp=sharing">Wynton's
+                Resume</a>
         </section>
+<br/>
 
+<div id="main-container" class="container">
+    <section class="main-section">
+      <h1 id="top">Portfolio</h1>
+      <!-- Projects Go Here -->
+      <div id="projects">
+        <div class="happy-hour">
+          <h2 class ="project">Happy Hour</h2>
+          <br />
+          <img src="assets/images/HH.jpg" alt="Happy Hour Logo">
+          <br />
+          <p class="projDetails">
+            The overall objective of this project was to configure a solution as to how a person can see individual
+            ingredients that create any desired cockTail of a user's choice. We approached this problem by incorporating
+            the API key of The CockTail Database which provided a wide array of information on cocktail ingredients and
+            measurements. The primary challenge we faced while working on this project dealt with organizing and
+            trimming the information within the arrays. There are some cocktail beverages that only have 3 ingredients,
+            while others may have up to 15. This created a dilemma where by the array of a cocktail with few ingredients
+            also came with a mass of empty array spaces which unwantedly populated our website. We navigated this issue
+            by implementing a conditional that trimmed the value length of the array if the ingredients were less than
+            the original length of the cocktail array. This allows for users to view cocktail ingredients without seeing
+            excessive blank spaces on the website when searching for drinks.</p>
+          <div class="row">
+            <div class="col-md-6" id="depV">
+              <a href="https://wyntond.github.io/Happy-Hour/">Link to Deployed Version</a>
+            </div>
+            <div class="col-md-6" id="gitHub">
+              <a href="https://github.com/WyntonD/Happy-Hour">Link to GitHub Repository</a>
+            </div>
+          </div>
+          <br />
+          <h2 class ="project">GifTastic</h2><br/>
+          <img src="assets/images/giftastic.jpg" alt="Giftastic logo"><br />
+          <p class="projDetails">This project involved retrieving data from an external source using AJAX calls for gif displays. It
+            involved a simple manipulation of both arrays and jQuery functions to populate the site with various gifs
+            when searched. A major challenge was figuring out how to pause and animate the gifs when being clicked on.
+            This was resolved by setting up a conditional that altered the data-state within the image attribute,
+            allowing for gifs to freeze and re-animate. </p>
+          <div class="row">
+            <div class="col-md-6" id ="depV">
+              <a href="https://wyntond.github.io/GifTastic/">Link to Deployed Version</a>
+            </div>
+            <div class="col-md-6" id ="gitHub">
+              <a href="https://github.com/WyntonD/GifTastic">Link to GitHub Repository</a>
+            </div>
+          </div>
+          <br />
+          <h2 class="project">Trivia Game</h2><br />
+          <img src="assets/images/trivia.jpg" alt="Trivia logo"><br />
+          <p class="projDetails">Trivia is a simple 3 question, timed quiz that keeps score if the user correctly answers each question. A big challenge with this project was solving how to determine if the user's choice was correctly guessed. This was solved through setting up a "right answer" array and creating a conditional around those answers.</p>
+          <div class="row">
+            <div class="col-md-6" id="depV">
+              <a href="https://wyntond.github.io/TriviaGame/">Link to Deployed Version</a>
+            </div>
+            <div class="col-md-6" id="gitHub">
+              <a href="https://github.com/WyntonD/TriviaGame">Link to GitHub Repository</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <br/>
+  <div class="contact">
+  <section class="main-section">
+    <br>
+    <div class ="row" id="contacts">
+      <div class ="col-md-6">
+          <h2>Email:</h2> <br/>
+          <h3 id="info">wyntonmdavis@gmail.com</h3>
+      </div>
+      <div class= "col-md-6">
+          <h2>Phone number: </h2> <br/>
+           <h3 id="info">(919)-699-6444</h3>  
+      </div>
+    </div>
+    <br/>
+  </section>
+  <div class ="links">
+      <div class="row">
+        <div class ="col-md-6">
+          <h2>Connect with me on LinkedIn</h2>
+            <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+            <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="wynton-davis-a63119187"><a class="LI-simple-link" href='https://www.linkedin.com/in/wynton-davis-a63119187?trk=profile-badge'>Wynton Davis</a></div>
+        </div>
+        <div class ="col-md-6">
+          <!-- Place this tag where you want the button to render. -->
+          <h2>Follow my GitHub</h2>
+            <a class="github-button" href="https://github.com/WyntonD" data-size="large" aria-label="Follow @WyntonD on GitHub">Follow @WyntonD</a>
+        </div>
+      </div>
+    </div>
+    </div>
     </div>
 
     <footer>
